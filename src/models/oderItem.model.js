@@ -22,7 +22,6 @@ const orderItemSchema = new Schema({
     },
     discountPrice:{
         type:Number,
-        required:true
     },
     userId:{
         type:mongoose.Schema.Types.ObjectId,

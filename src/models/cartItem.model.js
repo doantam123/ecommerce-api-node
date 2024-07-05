@@ -26,7 +26,6 @@ const cartItemSchema = new mongoose.Schema({
     },
     discountPrice:{
         type:Number,
-        required:true
     },
     userId:{
         type:mongoose.Schema.Types.ObjectId,
