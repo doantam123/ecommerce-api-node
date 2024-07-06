@@ -20,7 +20,7 @@ const findOrderById = async (req, res) => {
 }
 
 const orderHistory = async (req, res) => {
-    const user = req.user
+    const user = await req.user
     try {
         let orderHistory = await orderService.usersOrderHistory(user._id)
         return res.status(200).send(orderHistory);

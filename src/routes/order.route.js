@@ -6,6 +6,6 @@ const { authenticate } = require('../middleware/authenticate.js')
 
 router.post('/', authenticate, orderController.createOrder);
 router.get('/user', authenticate, orderController.orderHistory);
-router.post('/:id', authenticate, orderController.findOrderById);
+router.get('/:id', authenticate, orderController.findOrderById);
 
 module.exports = router;
